@@ -1,10 +1,9 @@
 from django.urls import path
-from django.http import HttpRequest, HttpResponse
+from django.http import HttpRequest, HttpResponse, JsonResponse
 
 def home(request: HttpRequest):
 
-    html = "<h1>Hello, World!</h1>"
-    return HttpResponse(html)
+    return JsonResponse({})
 
 
 urlpatterns = [
