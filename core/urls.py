@@ -1,10 +1,10 @@
 from django.urls import path
-from django.http import HttpRequest
+from django.http import HttpRequest, HttpResponse
 
 def home(request: HttpRequest):
-    data = request.GET
-    print(data['a'])
-    pass
+
+    html = "<h1>Hello, World!</h1>"
+    return HttpResponse(html)
 
 
 urlpatterns = [
