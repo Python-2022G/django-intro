@@ -28,3 +28,13 @@
     ```bash
     python manage.py runserver
     ```
+6. request the server
+
+    ```bash
+    curl http://localhost:8000/home/
+    ```
+7. request the server with a query parameter
+
+    ```bash
+    curl http://localhost:8000/home/?a=3&b=4
+    ```
